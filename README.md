@@ -13,6 +13,8 @@ How DyslexiScan Works:
 	Dyslexic Conversion: DyslexiScan model provided by open AI to transform recognised text into a friendly format.
 	Text-to-Speech: DyslexiScan offers a text-to-speech feature for auditory support.
 	Save and Share: Users can copy the converted text for accessibility and collaboration.
+
+
 Conclusion:
 Dyslexia should not be a barrier to enjoying the world of written knowledge. DyslexiScan is a compassionate companion that empowers individuals with dyslexia to unlock the potential of reading and learning. By combining Apple's advanced Vision AI and a Open AI model, DyslexiScan offers a seamless and personalised reading experience that bridges the gap between dyslexic text and its conventional counterpart. With DyslexiScan, we aim to make the joy of reading accessible to all, regardless of their reading challenges.
 Experience the transformative power of DyslexiScan and embark on a journey to a more inclusive and accessible reading world.
