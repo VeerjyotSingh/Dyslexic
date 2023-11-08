@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dyslexic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="xEb-K7-SGB" kind="show" identifier="image captured" id="xg0-ib-DEf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="170" y="-30"/>
+        </scene>
+        <!--Image Viewer View Controller-->
+        <scene sceneID="ijc-aP-gGD">
+            <objects>
+                <viewController id="xEb-K7-SGB" customClass="ImageViewerViewController" customModule="Dyslexic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWh-y7-5cC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-CF-urP">
+                                <rect key="frame" x="16" y="166" width="361" height="284"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="bFG-VR-koF"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2nr-M8-aef">
+                                <rect key="frame" x="0.0" y="48" width="393" height="108"/>
+                                <color key="backgroundColor" red="0.42193520070000001" green="0.90784966950000001" blue="0.87073355910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="LexiLearn" id="zML-mI-5hK">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="Foh-LL-Jre">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="play:" destination="xEb-K7-SGB" id="reo-1T-jdP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Loading....." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-tU-5rV">
+                                <rect key="frame" x="16" y="458" width="361" height="364"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0LX-yL-voK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aDB-CF-urP" firstAttribute="top" secondItem="2nr-M8-aef" secondAttribute="bottom" constant="10" id="4bI-OC-KEB"/>
+                            <constraint firstItem="0LX-yL-voK" firstAttribute="bottom" secondItem="Chr-tU-5rV" secondAttribute="bottom" constant="20" id="C5e-N1-fdN"/>
+                            <constraint firstItem="Chr-tU-5rV" firstAttribute="top" secondItem="aDB-CF-urP" secondAttribute="bottom" constant="8" id="Cib-Xs-jf7"/>
+                            <constraint firstItem="Chr-tU-5rV" firstAttribute="leading" secondItem="0LX-yL-voK" secondAttribute="leading" constant="16" id="F23-U9-BPd"/>
+                            <constraint firstItem="0LX-yL-voK" firstAttribute="trailing" secondItem="aDB-CF-urP" secondAttribute="trailing" constant="16" id="L8K-NT-LAO"/>
+                            <constraint firstItem="2nr-M8-aef" firstAttribute="leading" secondItem="0LX-yL-voK" secondAttribute="leading" id="Opq-6B-wH5"/>
+                            <constraint firstItem="aDB-CF-urP" firstAttribute="top" secondItem="2nr-M8-aef" secondAttribute="bottom" constant="10" id="Owt-rg-p9V"/>
+                            <constraint firstItem="2nr-M8-aef" firstAttribute="trailing" secondItem="0LX-yL-voK" secondAttribute="trailing" id="alw-AV-eyb"/>
+                            <constraint firstItem="aDB-CF-urP" firstAttribute="leading" secondItem="0LX-yL-voK" secondAttribute="leading" constant="16" id="boW-VB-qB5"/>
+                            <constraint firstItem="0LX-yL-voK" firstAttribute="trailing" secondItem="Chr-tU-5rV" secondAttribute="trailing" constant="16" id="hMF-Vp-p86"/>
+                            <constraint firstItem="2nr-M8-aef" firstAttribute="top" secondItem="0LX-yL-voK" secondAttribute="top" constant="48" id="vDC-0t-s0W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FSg-Pc-cw8"/>
+                    <connections>
+                        <outlet property="imageViewer" destination="aDB-CF-urP" id="1Hf-92-pmV"/>
+                        <outlet property="textView" destination="Chr-tU-5rV" id="PHH-yA-Ui7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptp-O8-pfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020.6106870229007" y="-30.281690140845072"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

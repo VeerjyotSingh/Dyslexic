@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54B8CCC60F7944758FD81F62 /* Pods_DyslexicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68EA7F790EF28D743951B36 /* Pods_DyslexicTests.framework */; };
+		B4CF99E3458728C84A826234 /* Pods_Dyslexic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF338CBAF021E61E50BA1BC /* Pods_Dyslexic.framework */; };
+		DABB9DB200B8B1A68BE71DA2 /* Pods_Dyslexic_DyslexicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D80A61EFC41600B7F4EDB19 /* Pods_Dyslexic_DyslexicUITests.framework */; };
 		E21A855C2AF9469400655648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A855B2AF9469400655648 /* AppDelegate.swift */; };
 		E21A855E2AF9469400655648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A855D2AF9469400655648 /* SceneDelegate.swift */; };
 		E21A85602AF9469400655648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A855F2AF9469400655648 /* ViewController.swift */; };
@@ -16,6 +19,7 @@
 		E21A85732AF9469A00655648 /* DyslexicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A85722AF9469A00655648 /* DyslexicTests.swift */; };
 		E21A857D2AF9469A00655648 /* DyslexicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A857C2AF9469A00655648 /* DyslexicUITests.swift */; };
 		E21A857F2AF9469A00655648 /* DyslexicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A857E2AF9469A00655648 /* DyslexicUITestsLaunchTests.swift */; };
+		E21A858D2AF9E34500655648 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E21A858C2AF9E34500655648 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D80A61EFC41600B7F4EDB19 /* Pods_Dyslexic_DyslexicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dyslexic_DyslexicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DE1F2690A11DB787CCDA78 /* Pods-Dyslexic-DyslexicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyslexic-DyslexicUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dyslexic-DyslexicUITests/Pods-Dyslexic-DyslexicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4052240DE8A763A5E6389929 /* Pods-DyslexicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DyslexicTests.release.xcconfig"; path = "Target Support Files/Pods-DyslexicTests/Pods-DyslexicTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DF338CBAF021E61E50BA1BC /* Pods_Dyslexic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dyslexic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CC6C1E3BD63516DC8B8BEF /* Pods-Dyslexic-DyslexicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyslexic-DyslexicUITests.release.xcconfig"; path = "Target Support Files/Pods-Dyslexic-DyslexicUITests/Pods-Dyslexic-DyslexicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4E600C43F8D7E3EF608254A /* Pods-DyslexicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DyslexicTests.debug.xcconfig"; path = "Target Support Files/Pods-DyslexicTests/Pods-DyslexicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D31C84FD523A2C66FA6F6784 /* Pods-Dyslexic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyslexic.debug.xcconfig"; path = "Target Support Files/Pods-Dyslexic/Pods-Dyslexic.debug.xcconfig"; sourceTree = "<group>"; };
+		D68EA7F790EF28D743951B36 /* Pods_DyslexicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DyslexicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D804E78219D97DCD549C2BAE /* Pods-Dyslexic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyslexic.release.xcconfig"; path = "Target Support Files/Pods-Dyslexic/Pods-Dyslexic.release.xcconfig"; sourceTree = "<group>"; };
 		E21A85582AF9469400655648 /* Dyslexic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dyslexic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21A855B2AF9469400655648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E21A855D2AF9469400655648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CF99E3458728C84A826234 /* Pods_Dyslexic.framework in Frameworks */,
+				E21A858D2AF9E34500655648 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B8CCC60F7944758FD81F62 /* Pods_DyslexicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABB9DB200B8B1A68BE71DA2 /* Pods_Dyslexic_DyslexicUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A8E7AF74D20E39DFE6BF9AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DF338CBAF021E61E50BA1BC /* Pods_Dyslexic.framework */,
+				2D80A61EFC41600B7F4EDB19 /* Pods_Dyslexic_DyslexicUITests.framework */,
+				D68EA7F790EF28D743951B36 /* Pods_DyslexicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E21A854F2AF9469400655648 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +110,8 @@
 				E21A85712AF9469A00655648 /* DyslexicTests */,
 				E21A857B2AF9469A00655648 /* DyslexicUITests */,
 				E21A85592AF9469400655648 /* Products */,
+				FE51C56309039A8DCF136E21 /* Pods */,
+				6A8E7AF74D20E39DFE6BF9AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +156,19 @@
 			path = DyslexicUITests;
 			sourceTree = "<group>";
 		};
+		FE51C56309039A8DCF136E21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D31C84FD523A2C66FA6F6784 /* Pods-Dyslexic.debug.xcconfig */,
+				D804E78219D97DCD549C2BAE /* Pods-Dyslexic.release.xcconfig */,
+				31DE1F2690A11DB787CCDA78 /* Pods-Dyslexic-DyslexicUITests.debug.xcconfig */,
+				B8CC6C1E3BD63516DC8B8BEF /* Pods-Dyslexic-DyslexicUITests.release.xcconfig */,
+				C4E600C43F8D7E3EF608254A /* Pods-DyslexicTests.debug.xcconfig */,
+				4052240DE8A763A5E6389929 /* Pods-DyslexicTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21A85822AF9469A00655648 /* Build configuration list for PBXNativeTarget "Dyslexic" */;
 			buildPhases = (
+				BC9ECCFBE0E09CD661437A71 /* [CP] Check Pods Manifest.lock */,
 				E21A85542AF9469400655648 /* Sources */,
 				E21A85552AF9469400655648 /* Frameworks */,
 				E21A85562AF9469400655648 /* Resources */,
@@ -143,6 +186,9 @@
 			dependencies = (
 			);
 			name = Dyslexic;
+			packageProductDependencies = (
+				E21A858C2AF9E34500655648 /* Alamofire */,
+			);
 			productName = Dyslexic;
 			productReference = E21A85582AF9469400655648 /* Dyslexic.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21A85852AF9469A00655648 /* Build configuration list for PBXNativeTarget "DyslexicTests" */;
 			buildPhases = (
+				113E5386E26AD32DF9F328AB /* [CP] Check Pods Manifest.lock */,
 				E21A856A2AF9469A00655648 /* Sources */,
 				E21A856B2AF9469A00655648 /* Frameworks */,
 				E21A856C2AF9469A00655648 /* Resources */,
@@ -169,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21A85882AF9469A00655648 /* Build configuration list for PBXNativeTarget "DyslexicUITests" */;
 			buildPhases = (
+				9AD0FDBA564023402C3CABDC /* [CP] Check Pods Manifest.lock */,
 				E21A85742AF9469A00655648 /* Sources */,
 				E21A85752AF9469A00655648 /* Frameworks */,
 				E21A85762AF9469A00655648 /* Resources */,
+				70AB28E6B7E2BE1A933FA6DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +264,9 @@
 				Base,
 			);
 			mainGroup = E21A854F2AF9469400655648;
+			packageReferences = (
+				E21A858B2AF9E34500655648 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = E21A85592AF9469400655648 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,6 +304,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113E5386E26AD32DF9F328AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DyslexicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70AB28E6B7E2BE1A933FA6DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dyslexic-DyslexicUITests/Pods-Dyslexic-DyslexicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dyslexic-DyslexicUITests/Pods-Dyslexic-DyslexicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dyslexic-DyslexicUITests/Pods-Dyslexic-DyslexicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AD0FDBA564023402C3CABDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dyslexic-DyslexicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9ECCFBE0E09CD661437A71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dyslexic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E21A85542AF9469400655648 /* Sources */ = {
@@ -437,6 +575,7 @@
 		};
 		E21A85832AF9469A00655648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31C84FD523A2C66FA6F6784 /* Pods-Dyslexic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +604,7 @@
 		};
 		E21A85842AF9469A00655648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D804E78219D97DCD549C2BAE /* Pods-Dyslexic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +633,7 @@
 		};
 		E21A85862AF9469A00655648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E600C43F8D7E3EF608254A /* Pods-DyslexicTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +654,7 @@
 		};
 		E21A85872AF9469A00655648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4052240DE8A763A5E6389929 /* Pods-DyslexicTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +675,7 @@
 		};
 		E21A85892AF9469A00655648 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31DE1F2690A11DB787CCDA78 /* Pods-Dyslexic-DyslexicUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +694,7 @@
 		};
 		E21A858A2AF9469A00655648 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8CC6C1E3BD63516DC8B8BEF /* Pods-Dyslexic-DyslexicUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +751,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E21A858B2AF9E34500655648 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E21A858C2AF9E34500655648 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E21A858B2AF9E34500655648 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E21A85502AF9469400655648 /* Project object */;
 }
